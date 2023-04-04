@@ -1,0 +1,78 @@
+.card {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+
+    width: auto; 
+    height: 200px;
+
+    border-radius: 4px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.56s ease-in-out;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    align-self: flex-end;
+    padding: 0.5rem;
+    color: rgba(0, 0, 0, .90);
+    text-shadow: 1px 1px 5px gray, 0 0 1em white; /* Параметры тени */
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.thumbnail {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.thumbnail>img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.thumbnail>.title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 1.2rem;
+}
+
+.thumbnail div {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 0 .5rem;
+    margin-bottom: .25rem;
+}
+
+.thumbnail div > .brand {
+    color: rgba(0, 0, 0, .90);
+    text-shadow: 1px 1px 5px gray, 0 0 1em white;
+    font-weight: 200;
+}
+
+.thumbnail div > .badge {
+    color: #dd1111e6;
+    text-shadow: 1px 1px 5px gray, 0 0 1em white;
+    font-weight: 600;
+    font-size: .95rem;
+    padding: 2px .5rem;
+    background-color: rgba(242, 186, 2, .75);
+    border-radius: 50rem;
+}
